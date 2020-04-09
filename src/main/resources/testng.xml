@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- parallel线程开关 thread-count线程数 -->
+<suite name="Suite" verbose="1"  parallel="false" thread-count="1">
+    <!--参数（用户密码）-->
+    <parameter name="username" value="18975719769"/>
+    <parameter name="pass" value="123456789."/>
+    <test name="Test1">
+        <!--监听（错误截图）-->
+        <listeners>
+          <!--  <listener class-name=""/>-->
+        </listeners>
+        <classes>
+            <!-- name的值为 包名.类名（启动测试）-->
+            <class  name="testCase.LoginCase"></class>
+        </classes>
+    </test>
+
+</suite>

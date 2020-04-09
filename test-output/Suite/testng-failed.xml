@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]">
+  <parameter name="pass" value="123456789."/>
+  <parameter name="username" value="18975719769"/>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="testCase.LoginCase">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testLogin"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCase.LoginCase -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

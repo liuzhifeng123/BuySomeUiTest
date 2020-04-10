@@ -5,13 +5,13 @@
   <parameter name="username" value="18975719769"/>
   <test name="Test1(failed)">
     <classes>
-      <class name="testCase.LoginCase">
+      <class name="testCase.AddBrandCase">
         <methods>
           <include name="beforeClass"/>
-          <include name="testLogin"/>
+          <include name="testAddBtand"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- testCase.LoginCase -->
+      </class> <!-- testCase.AddBrandCase -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

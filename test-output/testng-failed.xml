@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Suite]">
-  <parameter name="pass" value="123456789."/>
-  <parameter name="username" value="18975719769"/>
-  <test name="Test1(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="BuySomeUiTest(failed)">
     <classes>
-      <class name="testCase.LoginCase">
+      <class name="testCase.AddBrandCase">
         <methods>
           <include name="beforeClass"/>
-          <include name="testLogin"/>
+          <include name="testAddBtand"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- testCase.LoginCase -->
+      </class> <!-- testCase.AddBrandCase -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- BuySomeUiTest(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

@@ -2,10 +2,7 @@ package util;
 
 import org.testng.annotations.Test;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.Properties;
 
 /**
@@ -46,7 +43,15 @@ public class ProUtil {
         }
     }
 
-    public void writePro(String setName, String setValue) {
-        prop.setProperty(setName, setValue);
+    public void writePro(String naem , String value){
+        Properties propertie = new Properties();
+        propertie.setProperty(naem,value);
+        try {
+            FileOutputStream outputFile = new FileOutputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\token.properties");
+            propertie.store(outputFile,"File was saved!");
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
     }
 }

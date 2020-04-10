@@ -78,4 +78,10 @@ public class DriverBase {
         driver.getCurrentUrl();
     }
 
+    /**
+     *刷新页面
+     */
+    public void refresh() {
+        driver.navigate().refresh();
+    }
 }

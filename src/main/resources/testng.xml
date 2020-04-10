@@ -12,6 +12,7 @@
         <classes>
             <!-- name的值为 包名.类名（启动测试）-->
             <class  name="testCase.LoginCase"></class>
+            <class name="testCase.AddBrandCase"></class>
         </classes>
     </test>
 
